@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
 // app.use(cors({ origin: "https://travel-frontend-28d7.onrender.com", credentials: true }));
-app.use(cors({ origin: "http://localhost:4173/", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 
 
 app.use(bodyParser.json({limit: '50mb'}));
